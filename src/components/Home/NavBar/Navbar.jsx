@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
-function Navbar() {
+export const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -84,6 +84,4 @@ function Navbar() {
       </div>
     </div>
   );
-}
-
-export default Navbar;
+};

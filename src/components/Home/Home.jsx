@@ -4,7 +4,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
 import { toast } from "react-toastify";
-import Navbar from "../Navbar/Navbar";
+import { Navbar } from "./NavBar/Navbar";
 
 function Home() {
   const [cvDownloaded, setCvDownloaded] = useState(false);
@@ -12,6 +12,7 @@ function Home() {
     words: [
       "Java Full Stack Developer",
       "Frontend Developer",
+      "React Developer",
       "Backend Developer",
     ],
     loop: true,
