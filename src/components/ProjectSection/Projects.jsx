@@ -7,7 +7,7 @@ function Projects() {
       title: "Weather App",
       description:
         "A React application that fetches and displays real-time weather updates.Users can search for any city and view temperature, humidity, and forecast.",
-      image: "/Images/coding-3-4.png",
+      image: "/Images/weather.png",
       technologies: ["React Js", "Tailwind CSS", "OpenWeather API"],
       link: "#",
     },
@@ -15,16 +15,17 @@ function Projects() {
       title: "Portfolio Website",
       description:
         "A personal portfolio website built with React showcasing projects and skills.Includes smooth navigation and a modern responsive design.",
-      image: "/Images/portfolio.png",
+      image: "/Images/portfolio1.png",
       technologies: ["React Js", "Tailwind CSS", "Framer Motion"],
       link: "#",
     },
     {
-      title: "Currency Converter",
+      title: "Todo List App",
       description:
-        "A React app that quickly converts currencies using real-time exchange rates.Clean user interface styled with Tailwind CSS and animated with Framer Motion.",
-      image: "/Images/project3.jpg",
-      technologies: ["React Js", "Tailwind CSS", "Framer Motion"],
+        "A simple and intuitive Todo List application built with React.Users can add, edit, delete, and mark tasks as completed.",
+      image: "/Images/todo.png",
+      technologies: ["React Js", "Tailwind CSS", "Local Storage"],
+
       link: "#",
     },
   ];
@@ -42,13 +43,14 @@ function Projects() {
               key={index}
               className="bg-blue-50 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-90 transition-transform duration-300"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="w-full h-72 overflow-hidden flex justify-center items-center bg-gray-100 dark:bg-gray-700">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
+
               <div className="p-8">
                 <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                   {project.title}

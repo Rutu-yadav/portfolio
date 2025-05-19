@@ -48,7 +48,7 @@ function Skills() {
                     {items.map((skill, index) => (
                       <div
                         key={index}
-                        className="flex  items-center justify-evenly gap-1 p-2 dark:bg-gray-800 bg-opacity-10 dark:bg-opacity-0 rounded-lg transition-all duration-300 cursor-pointer shadow-2xl border-2 border-gray-100 dark:border-white hover:bg-blue-500 hover:opacity-999 dark:hover:bg-blue-500 group hover:shadow-blue-500/50"
+                        className="flex  items-center justify-evenly gap-1 p-2 dark:bg-gray-800 bg-opacity-10 dark:bg-opacity-0 rounded-lg transition-all duration-300 cursor-pointer shadow-xl border-2 border-gray-500 dark:border-white hover:bg-blue-500 hover:opacity-999 dark:hover:bg-blue-500 group hover:shadow-blue-500/50"
                       >
                         {skill.icon && (
                           <img
