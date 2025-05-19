@@ -31,9 +31,9 @@ function Projects() {
   ];
 
   return (
-    <div id="projects" className="h-screen py-32">
+    <div id="projects" className="h-screen py-32 ">
       <div className="container mx-auto px-20">
-        <h1 className="text-4xl font-bold text-center mb-12 text-blue-900 dark:text-blue-400">
+        <h1 className="text-3xl font-bold text-center mb-2 text-blue-900 dark:text-blue-400">
           Projects
         </h1>
 
@@ -43,7 +43,7 @@ function Projects() {
               key={index}
               className="bg-blue-50 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-90 transition-transform duration-300"
             >
-              <div className="w-full h-72 overflow-hidden flex justify-center items-center bg-gray-100 dark:bg-gray-700">
+              <div className="w-full h-70 overflow-hidden flex justify-center items-center ">
                 <img
                   src={project.image}
                   alt={project.title}

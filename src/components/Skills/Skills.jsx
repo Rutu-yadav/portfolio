@@ -34,7 +34,7 @@ function Skills() {
         </h1>
 
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-2/3">
+          <div className="md:w-2/3 lg:w-2/3 sm:w-full ">
             <div className="grid grid-cols-1 mx-20">
               {Object.entries(skills).map(([category, items]) => (
                 <div
@@ -44,7 +44,7 @@ function Skills() {
                   <h2 className="text-xl font-semibold mb-4 text-blue-900 dark:text-blue-400 capitalize">
                     {category}:-
                   </h2>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  gap-2">
                     {items.map((skill, index) => (
                       <div
                         key={index}
@@ -54,10 +54,10 @@ function Skills() {
                           <img
                             src={skill.icon}
                             alt={skill.name}
-                            className="w-8 object-contain "
+                            className="w-8 "
                           />
                         )}
-                        <h3 className="text-bold text-lg font-medium text-blue-900 dark:text-blue-400 group-hover:text-white transition-colors duration-300 text-center">
+                        <h3 className="text-bold text-lg font-medium text-blue-900 dark:text-blue-400 group-hover:text-white transition-colors duration-300 text-center text-nowrap">
                           {skill.name}
                         </h3>
                       </div>
@@ -68,7 +68,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="md:w-1/3">
+          <div className="md:w-1/4">
             <div className="bg-white dark:bg-gray-800 bg-opacity-10 dark:bg-opacity-0 backdrop-blur-sm rounded-lg p-4 h-full flex items-center justify-center">
               <img
                 src="/Images/undraw_programmer_raqr.svg"
