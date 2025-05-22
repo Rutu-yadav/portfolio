@@ -59,14 +59,14 @@ function Contact() {
                     name="from_name"
                     id="name"
                     placeholder="Enter your name"
-                    className="mt-2 block w-full rounded-md border-2 shadow-lg focus:ring-4 focus:ring-blue-500 dark:bg-gray-700 dark:text-white px-4 py-2"
+                    className="mt-2 block w-full rounded-md border-2 shadow-lg focus:ring-4 focus:ring-blue-500 dark:bg-gray-700 dark:text-white px-4 py-2 bg-white"
                     required
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 bg-white"
                   >
                     Email
                   </label>
@@ -75,7 +75,7 @@ function Contact() {
                     name="from_email"
                     placeholder="Enter your email"
                     id="email"
-                    className="mt-1 block w-full rounded-md border-2 shadow-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white px-4 py-2"
+                    className="mt-1 block w-full rounded-md border-2 shadow-lg focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white px-4 py-2 bg-white"
                     required
                   />
                 </div>
@@ -91,7 +91,7 @@ function Contact() {
                     name="message"
                     placeholder="Enter your message"
                     rows="3"
-                    className="mt-1 block w-full rounded-lg border-2 shadow-lg  focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white px-4 py-2"
+                    className="mt-1 block w-full rounded-lg border-2 shadow-lg  focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white px-4 py-2 bg-white"
                     required
                   ></textarea>
                 </div>

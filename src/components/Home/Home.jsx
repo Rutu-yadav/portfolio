@@ -67,8 +67,8 @@ function Home() {
 
         <div className="w-1/2 relative">
           <div
-            className="absolute inset-0 bg-cover bg-center mt-20"
-            style={{ backgroundImage: "url('/Images/coding-3-4.png')" }}
+            className="absolute inset-0 bg-no-repeat bg-center mt-20 p-32 "
+            style={{ backgroundImage: "url('/Images/office-work-11.svg')" }}
           />
         </div>
       </div>

@@ -44,11 +44,11 @@ I'm excited to start my career and work on real-world projects!
 
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/3">
-            <div className="p-4">
+            <div className=" ">
               <img
-                src="/Images/office-work-11.svg"
+                src="/Images/undraw_programmer_raqr.svg"
                 alt="Profile"
-                className="w-full h-auto rounded-lg"
+                className="h-auto rounded-lg w-4/5  text-center mx-auto mt-14"
               />
             </div>
           </div>

@@ -57,9 +57,9 @@ function Skills() {
                             className="w-8 "
                           />
                         )}
-                        <h3 className="text-bold text-lg font-medium text-blue-900 dark:text-blue-400 group-hover:text-white transition-colors duration-300 text-center text-nowrap">
+                        <p className="text-bold text-lg font-medium text-blue-900 dark:text-blue-400 group-hover:text-white transition-colors duration-300 text-center text-nowrap">
                           {skill.name}
-                        </h3>
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -71,7 +71,7 @@ function Skills() {
           <div className="md:w-1/4">
             <div className="bg-white dark:bg-gray-800 bg-opacity-10 dark:bg-opacity-0 backdrop-blur-sm rounded-lg p-4 h-full flex items-center justify-center">
               <img
-                src="/Images/undraw_programmer_raqr.svg"
+                src="/Images/undraw_react_ytu4.svg"
                 alt="Skills"
                 className="w-full h-auto rounded-lg"
               />

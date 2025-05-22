@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { FaGithub, FaExternalLinkAlt, FaLinkedinIn } from "react-icons/fa";
 
 function Projects() {
   const projects = [
@@ -7,17 +6,28 @@ function Projects() {
       title: "Weather App",
       description:
         "A React application that fetches and displays real-time weather updates.Users can search for any city and view temperature, humidity, and forecast.",
-      image: "/Images/weather.png",
+      image: "/Images/weatherapp.png",
       technologies: ["React Js", "Tailwind CSS", "OpenWeather API"],
-      link: "#",
+      linkNetlify: "https://rutuja-weatherapp.netlify.app/",
+      linkGithub: "https://github.com/Rutu-yadav/WeatherApp",
+      linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
+      viewNetlify: <FaExternalLinkAlt />,
+      viewGithub: <FaGithub />,
+      icon: "/icons/github.svg",
+      viewLinkedin: <FaLinkedinIn />,
     },
     {
       title: "Portfolio Website",
       description:
         "A personal portfolio website built with React showcasing projects and skills.Includes smooth navigation and a modern responsive design.",
-      image: "/Images/portfolio1.png",
+      image: "/Images/portfolioo.png",
       technologies: ["React Js", "Tailwind CSS", "Framer Motion"],
-      link: "#",
+      linkNetlify: "https://rutujayadav.netlify.app/",
+      linkGithub: "https://github.com/Rutu-yadav/portfolio",
+      linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
+      viewNetlify: <FaExternalLinkAlt />,
+      viewGithub: <FaGithub />,
+      viewLinkedin: <FaLinkedinIn />,
     },
     {
       title: "Todo List App",
@@ -26,14 +36,19 @@ function Projects() {
       image: "/Images/todo.png",
       technologies: ["React Js", "Tailwind CSS", "Local Storage"],
 
-      link: "#",
+      linkNetlify: "https://rutuja-todolistapp.netlify.app/",
+      linkGithub: "https://github.com/Rutu-yadav/TodoListApp",
+      linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
+      viewNetlify: <FaExternalLinkAlt />,
+      viewGithub: <FaGithub />,
+      viewLinkedin: <FaLinkedinIn />,
     },
   ];
 
   return (
-    <div id="projects" className="h-screen py-32 ">
+    <div id="projects" className="h-screen pt-36 ">
       <div className="container mx-auto px-20">
-        <h1 className="text-3xl font-bold text-center mb-2 text-blue-900 dark:text-blue-400">
+        <h1 className="text-3xl font-bold text-center mb-10 text-blue-900 dark:text-blue-400">
           Projects
         </h1>
 
@@ -68,12 +83,38 @@ function Projects() {
                     </span>
                   ))}
                 </div>
-                <Link
-                  href={project.link}
-                  className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-                >
-                  View Project
-                </Link>
+                <div className="flex justify-evenly items-center ">
+                  <div>
+                    <a
+                      href={project.linkNetlify}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2  rounded-lg  transition-colors text-2xl font-bold text-blue-500 hover:text-blue-800"
+                    >
+                      {project.viewNetlify}
+                    </a>
+                  </div>
+                  <div className="">
+                    <a
+                      href={project.linkGithub}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2    rounded-lg  transition-colors text-3xl font-bold text-blue-500 hover:text-blue-800"
+                    >
+                      {project.viewGithub}
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href={project.linkLinkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2    rounded-lg  transition-colors text-3xl font-bold text-blue-500 hover:text-blue-800"
+                    >
+                      {project.viewLinkedin}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

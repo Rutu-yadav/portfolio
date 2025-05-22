@@ -1,0 +1,132 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: dark only;
+}
+
+:root[data-theme='light'] {
+	color-scheme: light only;
+}
+
+html:not(:focus-within) {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+
+	background: canvas;
+}
+
+body::before {
+	--size: 60px;
+	content: '';
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background: linear-gradient(
+				90deg,
+				var(--line) 1px,
+				transparent 1px var(--size)
+			)
+			50% 50% / var(--size) var(--size),
+		linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+			var(--size) var(--size);
+	mask: linear-gradient(-15deg, transparent 40%, white);
+	top: 0;
+	transform-style: flat;
+	pointer-events: none;
+	z-index: -1;
+}
+
+
+
+.theme-toggle {
+	color: var(--color);
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	width: 48px;
+	aspect-ratio: 1;
+	padding: 0;
+	border: 0;
+	display: grid;
+	place-items: center;
+	border-radius: 12px;
+	background: transparent;
+	transition: background 0.2s;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.theme-toggle::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 12px;
+	background: hsl(0 0% 50% / calc(var(--intent, 0) * 0.25));
+}
+
+.theme-toggle:is(:hover, :focus-visible) {
+	--intent: 1;
+}
+
+/*.dark .theme-toggle:is(:hover, :focus-visible) {
+	background: hsl(0 0% 30%);
+}*/
+
+.theme-toggle[aria-pressed='true'] svg path:last-of-type {
+	display: block;
+}
+
+.theme-toggle svg {
+	color: currentColor;
+	width: 50%;
+}
+
+.theme-toggle[aria-pressed='true'] svg path:first-of-type,
+.theme-toggle svg path:last-of-type {
+	display: none;
+}
+
+::view-transition-group(root) {
+	animation-duration: 1.25s;
+}
+::view-transition-new(root),
+::view-transition-old(root) {
+	mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+	animation-name: reveal-light;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+	animation: none;
+}
+.dark::view-transition-new(root) {
+	animation-name: reveal-dark;
+}
+
+@keyframes reveal-dark {
+	from {
+		clip-path: polygon(-30% 0, -30% 0, -15% 100%, -10% 115%);
+	}
+	to {
+		clip-path: polygon(-30% 0, 130% 0, 115% 100%, -10% 115%);
+	}
+}
+
+@keyframes reveal-light {
+	from {
+		clip-path: polygon(130% 0, 130% 0, 115% 100%, 110% 115%);
+	}
+	to {
+		clip-path: polygon(130% 0, -30% 0, -15% 100%, 110% 115%);
+	}
+}
