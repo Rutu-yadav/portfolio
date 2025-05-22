@@ -5,6 +5,7 @@ import AboutMe from "./components/AboutSection/AboutMe";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/ProjectSection/Projects";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer";
 
 function All() {
   return (
@@ -23,6 +24,9 @@ function All() {
       </div>
       <div className="snap-start">
         <Contact />
+      </div>
+      <div className="snap-start ">
+        <Footer />
       </div>
     </div>
   );

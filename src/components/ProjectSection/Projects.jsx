@@ -13,7 +13,6 @@ function Projects() {
       linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
       viewNetlify: <FaExternalLinkAlt />,
       viewGithub: <FaGithub />,
-      icon: "/icons/github.svg",
       viewLinkedin: <FaLinkedinIn />,
     },
     {
@@ -35,7 +34,6 @@ function Projects() {
         "A simple and intuitive Todo List application built with React.Users can add, edit, delete, and mark tasks as completed.",
       image: "/Images/todo.png",
       technologies: ["React Js", "Tailwind CSS", "Local Storage"],
-
       linkNetlify: "https://rutuja-todolistapp.netlify.app/",
       linkGithub: "https://github.com/Rutu-yadav/TodoListApp",
       linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
@@ -46,74 +44,74 @@ function Projects() {
   ];
 
   return (
-    <div id="projects" className="h-screen pt-36 ">
-      <div className="container mx-auto px-20">
-        <h1 className="text-3xl font-bold text-center mb-10 text-blue-900 dark:text-blue-400">
+    <div
+      id="projects"
+      className="min-h-screen py-12 sm:py-16 md:py-20 lg:py-24"
+    >
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-blue-900 dark:text-blue-400">
           Projects
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-blue-50 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform hover:scale-90 transition-transform duration-300"
+              className="bg-blue-50 dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[0.98]"
             >
-              <div className="w-full h-70 overflow-hidden flex justify-center items-center ">
+              <div className="w-full h-48 sm:h-56 md:h-64 overflow-hidden flex justify-center items-center bg-white dark:bg-gray-700 transition-transform duration-300 hover:scale-[1.02]">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="max-w-full max-h-full object-contain"
+                  className="w-full h-full object-contain p-2"
                 />
               </div>
 
-              <div className="p-8">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+              <div className="p-4 sm:p-6 md:p-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-2 text-gray-800 dark:text-white">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="px-4 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm text-gray-800 dark:text-gray-200"
+                      className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-gray-100 dark:bg-gray-700 rounded-full text-gray-800 dark:text-gray-200 transition-transform duration-300 hover:scale-[1.05]"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-evenly items-center ">
-                  <div>
-                    <a
-                      href={project.linkNetlify}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-4 py-2  rounded-lg  transition-colors text-2xl font-bold text-blue-500 hover:text-blue-800"
-                    >
-                      {project.viewNetlify}
-                    </a>
-                  </div>
-                  <div className="">
-                    <a
-                      href={project.linkGithub}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-4 py-2    rounded-lg  transition-colors text-3xl font-bold text-blue-500 hover:text-blue-800"
-                    >
-                      {project.viewGithub}
-                    </a>
-                  </div>
-                  <div>
-                    <a
-                      href={project.linkLinkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block px-4 py-2    rounded-lg  transition-colors text-3xl font-bold text-blue-500 hover:text-blue-800"
-                    >
-                      {project.viewLinkedin}
-                    </a>
-                  </div>
+                <div className="flex justify-center sm:justify-evenly items-center gap-4 sm:gap-6">
+                  <a
+                    href={project.linkNetlify}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl sm:text-2xl text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-300 hover:scale-[1.1] active:scale-[0.9]"
+                    aria-label="View Live Demo"
+                  >
+                    {project.viewNetlify}
+                  </a>
+                  <a
+                    href={project.linkGithub}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl sm:text-2xl text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-300 hover:scale-[1.1] active:scale-[0.9]"
+                    aria-label="View GitHub Repository"
+                  >
+                    {project.viewGithub}
+                  </a>
+                  <a
+                    href={project.linkLinkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl sm:text-2xl text-blue-500 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-300 hover:scale-[1.1] active:scale-[0.9]"
+                    aria-label="View LinkedIn Profile"
+                  >
+                    {project.viewLinkedin}
+                  </a>
                 </div>
               </div>
             </div>

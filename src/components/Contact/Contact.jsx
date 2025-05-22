@@ -33,13 +33,13 @@ function Contact() {
       );
   };
   return (
-    <div id="contact" className="h-screen py-36">
+    <div id="contact" className="h-screen ">
       <div className="">
         <h1 className="text-4xl font-bold text-center mb-10 text-blue-900 dark:text-blue-400">
           Contact Me
         </h1>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto p-4">
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Information */}
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
@@ -66,7 +66,7 @@ function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 bg-white"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 "
                   >
                     Email
                   </label>
@@ -140,16 +140,6 @@ function Contact() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="text-center mt-6">
-          <p className="text-gray-600">
-            © {new Date().getFullYear()} All Rights Reserved | Developed with ❤️
-            by{" "}
-            <span className="text-blue-500 font-semibold dark:text-blue-500">
-              Rutuja Yadav
-            </span>
-          </p>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { motion } from "framer-motion";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa";
@@ -29,48 +29,92 @@ function Home() {
 
   return (
     <div id="home" className="relative">
-      <div className="absolute top-0 left-0 right-0 z-10 ">
+      <div className="absolute top-0 left-0 right-0 z-10">
         <Navbar />
       </div>
-      <div className="h-screen flex">
-        <div className="w-1/2 flex items-center justify-center bg-white dark:bg-[#111827]">
-          <div className="text-black dark:text-white ">
-            <h1 className="text-xl  font-bold mb-4">Welcome to My Portfolio</h1>
-            <p className="text-xl font-bold text-black dark:text-white mb-2">
+      <div className="h-screen flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2 flex items-center justify-center bg-white dark:bg-[#111827] px-2 sm:px-6 md:px-8 lg:px-12">
+          <div className="text-black dark:text-white text-center lg:text-left mt-52">
+            <motion.h1
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="text-lg sm:text-xl md:text-2xl font-bold mb-4"
+            >
+              Welcome to My Portfolio
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-white mb-2"
+            >
               I am
-            </p>
-            <p className="text-7xl font-bold text-blue-500 mb-4">
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-500 mb-4"
+            >
               Rutuja Yadav
-            </p>
-            <div>
-              <span className="text-5xl mr-4">a</span>
-              <span className="text-5xl font-bold text-blue-500 ">{text}</span>
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2"
+            >
+              <span className="text-3xl sm:text-4xl md:text-5xl">a</span>
+              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">
+                {text}
+              </span>
               <Cursor />
-            </div>
-            <div className="mt-4 text-2xl font-bold">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="mt-4 text-xl sm:text-2xl font-bold"
+            >
               🧠 Logic | 🎨 Design | ⚡ Execution | 💯 Results
-            </div>
-            <div className="flex items-center gap-2 mt-6">
-              <Link
-                to="/resume/RutujaYadavResume.pdf"
-                className="bg-blue-500 flex items-center gap-2 hover:bg-blue-700 text-white font-bold px-6 py-2 rounded-full"
-                onClick={handleDownload}
-                target="_blank"
-                rel="noopener noreferrer"
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className="flex items-center justify-center lg:justify-start gap-2 mt-6"
+            >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                Download CV
-                <FaDownload />
-              </Link>
-            </div>
+                <Link
+                  to="/resume/RutujaYadav_Frontend_Resume.pdf"
+                  className="bg-blue-500 flex items-center gap-2 hover:bg-blue-700 text-white font-bold px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base"
+                  onClick={handleDownload}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download CV
+                  <FaDownload />
+                </Link>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
 
-        <div className="w-1/2 relative">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="w-full lg:w-1/2 relative hidden  sm:block "
+        >
           <div
-            className="absolute inset-0 bg-no-repeat bg-center mt-20 p-32 "
+            className="absolute inset-0 bg-no-repeat bg-center mt-20 p-8 sm:p-16 md:p-24 lg:p-32"
             style={{ backgroundImage: "url('/Images/office-work-11.svg')" }}
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
