@@ -38,7 +38,7 @@ I'm excited to start my career and work on real-world projects!
   return (
     <div
       id="about"
-      className="min-h-screen flex justify-center items-center pt-20 sm:py-16 md:py-20"
+      className="min-h-screen flex justify-center items-center  sm:py-16 md:py-20"
     >
       <div className=" mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
         <h1 className="text-3xl sm:text-4xl font-bold text-center mt-6 sm:mt-10 text-blue-900 dark:text-blue-400">

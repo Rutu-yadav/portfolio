@@ -91,7 +91,7 @@ function Home() {
               >
                 <Link
                   to="/resume/RutujaYadav_Frontend_Resume.pdf"
-                  className="bg-blue-500 flex items-center gap-2 hover:bg-blue-700 text-white font-bold px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base"
+                  className="bg-blue-500 flex items-center gap-2 hover:bg-blue-700 text-white font-bold px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base "
                   onClick={handleDownload}
                   target="_blank"
                   rel="noopener noreferrer"
