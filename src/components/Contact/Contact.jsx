@@ -35,7 +35,7 @@ function Contact() {
   return (
     <div id="contact" className="pt-28">
       <div className="">
-        <h1 className="text-4xl font-bold text-center mb-10 text-blue-900 dark:text-blue-400">
+        <h1 className="text-4xl font-bold text-center mt-2 text-blue-900 dark:text-blue-400">
           Contact Me
         </h1>
 
