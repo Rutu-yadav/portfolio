@@ -108,10 +108,10 @@ function Home() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="w-full lg:w-1/2 relative  hidden sm:block "
+          className="w-full  lg:w-1/2 relative  hidden  sm:block "
         >
           <div
-            className="absolute inset-0 bg-no-repeat bg-center  mt-20 p-8 sm:p-16 md:p-24 lg:p-32"
+            className="  bg-no-repeat bg-center bg-cover mt-2 p-8 sm:p-16 md:p-24 lg:p-32 w-full h-96 sm:h-96 md:h-96 lg:h-96 "
             style={{ backgroundImage: "url('/Images/office-work-11.svg')" }}
           />
         </motion.div>
