@@ -29,12 +29,12 @@ function Home() {
 
   return (
     <div id="home" className="relative">
-      <div className="absolute top-0 left-0 right-0 z-10">
+      <div className="absolute top-10 left-0 right-0 z-10">
         <Navbar />
       </div>
-      <div className="h-screen flex flex-col lg:flex-row">
+      <div className="min-h-screen flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 flex items-center justify-center bg-white dark:bg-[#111827] px-2 sm:px-6 md:px-8 lg:px-12">
-          <div className="text-black dark:text-white text-center lg:text-left mt-32">
+          <div className="text-black dark:text-white text-center lg:text-left mt-44">
             <motion.h1
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
