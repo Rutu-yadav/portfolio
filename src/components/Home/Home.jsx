@@ -34,12 +34,12 @@ function Home() {
       </div>
       <div className="h-screen flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 flex items-center justify-center bg-white dark:bg-[#111827] px-2 sm:px-6 md:px-8 lg:px-12">
-          <div className="text-black dark:text-white text-center lg:text-left mt-52">
+          <div className="text-black dark:text-white text-center lg:text-left mt-32">
             <motion.h1
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
-              className="text-lg sm:text-xl md:text-2xl font-bold mb-4"
+              className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-left"
             >
               Welcome to My Portfolio
             </motion.h1>
@@ -47,7 +47,7 @@ function Home() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-white mb-2"
+              className="text-lg sm:text-xl md:text-2xl font-bold text-black dark:text-white mb-2 text-left"
             >
               I am
             </motion.p>
@@ -55,7 +55,7 @@ function Home() {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-500 mb-4"
+              className="text-8xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-blue-500 mb-4 text-left"
             >
               Rutuja Yadav
             </motion.p>
@@ -63,10 +63,10 @@ function Home() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-2"
+              className="flex  sm:flex-row t gap-2"
             >
-              <span className="text-3xl sm:text-4xl md:text-5xl">a</span>
-              <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500">
+              <span className="text-2xl sm:text-4xl md:text-5xl ">a</span>
+              <span className="text-2xl sm:text-4xl md:text-5xl font-bold text-blue-500 text-left">
                 {text}
               </span>
               <Cursor />
@@ -75,9 +75,9 @@ function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="mt-4 text-xl sm:text-2xl font-bold"
+              className="mt-4 text-base sm:text-2xl font-bold text-left "
             >
-              🧠 Logic | 🎨 Design | ⚡ Execution | 💯 Results
+              🧠 Logic | 🎨 Design | ⚡Execution | 💯 Results
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -108,10 +108,10 @@ function Home() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="w-full lg:w-1/2 relative hidden  sm:block "
+          className="w-full lg:w-1/2 relative  hidden sm:block "
         >
           <div
-            className="absolute inset-0 bg-no-repeat bg-center mt-20 p-8 sm:p-16 md:p-24 lg:p-32"
+            className="absolute inset-0 bg-no-repeat bg-center  mt-20 p-8 sm:p-16 md:p-24 lg:p-32"
             style={{ backgroundImage: "url('/Images/office-work-11.svg')" }}
           />
         </motion.div>

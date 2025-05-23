@@ -44,11 +44,8 @@ function Projects() {
   ];
 
   return (
-    <div
-      id="projects"
-      className="min-h-screen py-12 sm:py-16 md:py-20 lg:py-24"
-    >
-      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+    <div id="projects" className=" pt-24 sm:py-16 md:py-20 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-4">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 md:mb-10 text-blue-900 dark:text-blue-400">
           Projects
         </h1>
@@ -84,7 +81,7 @@ function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-center sm:justify-evenly items-center gap-4 sm:gap-6">
+                <div className="flex justify-evenly sm:justify-evenly items-center gap-4 sm:gap-6">
                   <a
                     href={project.linkNetlify}
                     target="_blank"
