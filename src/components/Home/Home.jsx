@@ -111,7 +111,7 @@ function Home() {
           className="w-full  lg:w-1/2 relative  hidden  sm:block "
         >
           <div
-            className="  bg-no-repeat bg-center bg-cover mt-2 p-8 sm:p-16 md:p-24 lg:p-32 w-full h-96 sm:h-96 md:h-96 lg:h-96 "
+            className=" absolute bg-no-repeat bg-center bg-cover  mt-8 h-full w-full "
             style={{ backgroundImage: "url('/Images/office-work-11.svg')" }}
           />
         </motion.div>
