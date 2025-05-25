@@ -15,7 +15,8 @@ function Projects() {
       technologies: ["React Js", "Tailwind CSS", "OpenWeather API"],
       linkNetlify: "https://rutuja-weatherapp.netlify.app/",
       linkGithub: "https://github.com/Rutu-yadav/WeatherApp",
-      linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
+      linkLinkedin:
+        "https://www.linkedin.com/posts/rutujayadav_reactjs-weatherapp-frontenddevelopment-activity-7332390191208288256-lYWi?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFo5gZABNdQF9gAA55YoypRjSTpraw0pYHM",
       viewNetlify: <FaExternalLinkAlt />,
       viewGithub: <FaGithub />,
       viewLinkedin: <FaLinkedinIn />,
@@ -28,7 +29,7 @@ function Projects() {
       technologies: ["React Js", "Tailwind CSS", "Framer Motion"],
       linkNetlify: "https://rutujayadav.netlify.app/",
       linkGithub: "https://github.com/Rutu-yadav/portfolio",
-      linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
+
       viewNetlify: <FaExternalLinkAlt />,
       viewGithub: <FaGithub />,
       viewLinkedin: <FaLinkedinIn />,
@@ -41,7 +42,24 @@ function Projects() {
       technologies: ["React Js", "Tailwind CSS", "Local Storage"],
       linkNetlify: "https://rutuja-todolistapp.netlify.app/",
       linkGithub: "https://github.com/Rutu-yadav/TodoListApp",
-      linkLinkedin: "https://www.linkedin.com/in/rutujayadav/",
+      linkLinkedin:
+        "https://www.linkedin.com/posts/rutujayadav_reactjs-webdevelopment-frontenddevelopment-activity-7332373671912636416-XubH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFo5gZABNdQF9gAA55YoypRjSTpraw0pYHM",
+      viewNetlify: <FaExternalLinkAlt />,
+      viewGithub: <FaGithub />,
+      viewLinkedin: <FaLinkedinIn />,
+    },
+    {
+      title: "Tic Tac Toe Game",
+      description:
+        "A classic Tic Tac Toe game. Two players can play against each other. The game includes logic to determine the winner, detect a tie, and reset the game.",
+      image: "/Images/tictactoe.png",
+
+      technologies: ["HTML", "CSS", "JavaScript"],
+      linkNetlify: "https://rutuja-tictactoegame.netlify.app/",
+
+      linkGithub: "https://github.com/Rutu-yadav/TicTacToeGame",
+      linkLinkedin:
+        "https://www.linkedin.com/posts/rutujayadav_html-css-javascript-activity-7332453153218433024-FwIB?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFo5gZABNdQF9gAA55YoypRjSTpraw0pYHM",
       viewNetlify: <FaExternalLinkAlt />,
       viewGithub: <FaGithub />,
       viewLinkedin: <FaLinkedinIn />,
