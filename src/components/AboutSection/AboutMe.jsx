@@ -29,7 +29,7 @@ I'm excited to start my career and work on real-world projects!
     },
     {
       degree: "Secondary School Certificate",
-      institution: "Shivaji University, Kolhapur ",
+      institution: "Dharmveer Sambhaji Vidyalaya, Mumbai",
       year: "2016 - 2017",
       details: "Percentage: 81.80%",
     },

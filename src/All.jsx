@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function All() {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-y-auto bg-white dark:bg-gray-900">
+    <div className="snap-y scrollbar-hide  snap-mandatory h-screen overflow-y-auto bg-white dark:bg-gray-900">
       <div className="snap-start">
         <Home />
       </div>
